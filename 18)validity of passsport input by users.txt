@@ -1,0 +1,35 @@
+ 18)validity of passport input by users
+
+
+import re
+
+passwords = input("Type in: ")
+passwords = passwords.split(",")
+
+accepted_pass = []
+for i in passwords:
+    
+    if len(i) < 6 or len(i) > 12:
+        continue
+
+    elif not re.search("([a-z])+", i):
+        continue
+
+    elif not re.search("([A-Z])+", i):
+        continue
+
+    elif not re.search("([0-9])+", i):
+        continue
+
+    elif not re.search("([!@$%^&])+", i):
+        continue
+
+    else:
+
+
+print((" ").join(accepted_pass))
+
+Input:ABd1234@1,a F1#,2w3E*,2We3345
+
+Output:ABd1234@1
+

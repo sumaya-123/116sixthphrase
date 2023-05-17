@@ -1,0 +1,11 @@
+def LPS(S, left, right){
+        if left > right:
+            return 0
+        If left == right:
+            return 1
+        
+        if S[left] == S[right]:
+            return 2 + LPS(str,left+1,right-1);
+  
+  
+       return max(LPS(S, left, right - 1), LPS(S, left + 1, right))

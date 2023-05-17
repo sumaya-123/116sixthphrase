@@ -1,0 +1,8 @@
+def mycmp(a,b):
+     
+    if (a.distance == b.distance):
+        if (a.x != b.x):
+            return (a.x - b.x)
+        else:
+            return (a.y - b.y)
+    return (a.distance - b.distance)

@@ -1,0 +1,7 @@
+class American(object):
+ pass
+class Newyorker(American):
+ pass
+anAmerican=American()
+aNewYorker=NewYorker()
+print(aNewYorker)

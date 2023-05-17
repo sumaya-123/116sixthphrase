@@ -1,0 +1,27 @@
+23)square no
+
+# input a number 
+number = int (raw_input ("Enter an integer number: "))
+
+# calculate square
+square = number**2
+
+# print
+print "Square of {0} is {1} ".format (number, square)
+
+Output:
+8-64
+
+      24)buit in
+
+def absolute(number):
+        # it will return absolute Number
+
+    return abs(number)
+
+print absolute(int(raw_input('Enter Number :')))
+
+
+print abs.__doc__
+print int.__doc__
+print raw_input.__doc__

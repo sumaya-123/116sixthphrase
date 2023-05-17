@@ -1,0 +1,13 @@
+)sequence program
+
+inp = input("enter: ").upper()
+    string = "\n".join([string, inp]) if string and inp else "".join([string, inp])
+    if not inp:
+        print(string)
+        return string
+    return capitalize_line(string=string)
+
+Output:
+HELLO WORLD
+PRACTICE MAKE PERFECT
+

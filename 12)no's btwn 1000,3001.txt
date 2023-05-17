@@ -1,0 +1,12 @@
+12)no.’s bten 1000 nd 3000
+
+values = []
+for i in range(1000, 3001):
+    s = str(i)
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
+        values.append(s)
+print(",".join(values))
+
+Output:
+Values=1001,1010
+1002,1004,1006,1008
